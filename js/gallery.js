@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   thumbnails.forEach((thumbnail) => {
       thumbnail.addEventListener("click", function () {
-          fullImage.style.transform = "scale(0.9)"; // Initial scale for animation effect
+          fullImage.style.transform = "scale(0.9)"; 
           setTimeout(() => {
               fullImage.src = thumbnail.getAttribute("data-large");
               caption.textContent = thumbnail.getAttribute("data-caption");
-              fullImage.style.transform = "scale(1)"; // Scale up smoothly
+              fullImage.style.transform = "scale(1)"; 
           }, 100); // Adds a slight delay for the animation effect
       });
   });
